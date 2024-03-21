@@ -76,7 +76,7 @@ export function setPageLocale() {
  */
 export function getResBaseURL() {
     const env = process.env.NODE_ENV;
-    return location.protocol + "//" + location.hostname +"/dock";
+    return location.protocol + "//" + location.hostname + "/dock";
     
     if (env === "development" && isDevContainer()) {
         return location.protocol + "//" + getDevContainerServerHostname();
